@@ -1,0 +1,15 @@
+section:first-child {
+    header {
+        margin-bottom: 25px;
+    }
+    .author {
+        margin-top: 45px;
+
+        @media (max-width: $screen-sm-min) {
+            max-height: 100px;
+        }
+    }
+    footer {
+        margin-top: 75px;
+    }
+}

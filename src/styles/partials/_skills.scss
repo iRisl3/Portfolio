@@ -1,0 +1,33 @@
+.progress {
+    background-color: $cp-2;
+    max-width: 90%;
+    height: 49px;
+    position: relative;
+    border: 2.5px solid $cp-2;
+    border-radius: 15px;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .progress-title {
+        color: $cp-4;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+    }
+
+    .progress-bar {
+        height: 45px;
+        background: #f69989;
+        border-radius: 12px;
+        margin-left: -15px;
+        border: 2.5px solid transparent;
+    }
+}
+
+.progress-level {
+    position: absolute;
+    margin-top: -35px;
+    right: 0;
+    color: $cp-4;
+}

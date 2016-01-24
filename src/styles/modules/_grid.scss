@@ -1,0 +1,58 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: floor($grid-gutter-width / 2);
+    padding-right: ceil($grid-gutter-width / 2);
+    @extend %clearfix;
+
+    @media (min-width: $screen-sm-min) {
+        width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+            width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+            width: $container-lg;
+    }
+}
+.row {
+    margin-left: ceil($grid-gutter-width / -2);
+    margin-right: floor($grid-gutter-width / -2);
+    @extend %clearfix;
+}
+
+[class*="col-"] {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+}
+
+@for $i from 1 through $grid-columns {
+    .col-xs-#{$i} {
+        width: 100% / $grid-columns * $i;
+    }
+}
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through $grid-columns {
+        .col-xs-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through $grid-columns {
+        .col-xs-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through $grid-columns {
+        .col-xs-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+

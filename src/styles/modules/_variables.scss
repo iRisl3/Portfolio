@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
+
+// Color pallete
+$cp-1: rgba(62, 70, 81, 1.0);
+$cp-2: rgba(241, 101, 76, 1.0);
+$cp-3: rgba(0, 181, 181, 1.0);
+$cp-4: rgba(255, 255, 255, 1.0);
+$cp-5: rgba(212, 212, 212, 1.0);
+
+// Default
+$body-bg: $cp-4 !default;
+$text-color: rgba(51, 51, 51, 1.0);
+
+$link-color: #222 !default;
+$link-hover-color: $cp-3 !default;
+
+$font-family-raleway: 'Raleway', sans-serif;
+$font-family-ubuntu: 'Ubuntu', sans-serif;
+$font-family-base: $font-family-raleway !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;
+$font-size-small:         ceil(($font-size-base * 0.85)) !default;
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default;
+$font-size-h2:            floor(($font-size-base * 2.15)) !default;
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default;
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default;
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default;
+
+$line-height-base:        1.428571429 !default;
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
+
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default;
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
+$component-active-color: $cp-3 !default;
+$component-active-bg: $cp-4 !default;
+
+$caret-width-base:          4px !default;
+$caret-width-large:         5px !default;
+
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//$grid-columns:              12 !default;
+//$grid-gutter-width:         30px !default;
+//
+//$container-sm:                 (720px + $grid-gutter-width) !default;
+//$container-md:                 (940px + $grid-gutter-width) !default;
+//$container-lg:                 (1140px + $grid-gutter-width) !default;
+

@@ -1,0 +1,140 @@
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+        position: relative;
+        display: block;
+
+        a {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+
+            &.active {
+                color: $cp-2;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: $cp-3;
+            }
+        }
+    }
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    border-bottom: 2.5px solid $cp-1;
+}
+@media (min-width: $screen-sm-min) {
+    .navbar-header {
+        float: left;
+    }
+}
+.navbar-collapse {
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 1px solid transparent;
+    //-webkit-overflow-scrolling: touch;
+
+    .in {
+        overflow-y: auto;
+    }
+    @media (min-width: $screen-sm-min) {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+        .collapse {
+            display: block !important;
+            height: auto !important;
+            padding-bottom: 0;
+            overflow: visible !important;
+        }
+        .in {
+            overflow-y: visible;
+        }
+    }
+}
+.navbar-fixed-top .navbar-collapse {
+    max-height: 340px;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media (max-device-width: $screen-xs) and (orientation: landscape) {
+        .navbar-fixed-top .navbar-collapse {
+            max-height: 200px;
+        }
+    }
+}
+.navbar-fixed-top {
+    background-color: $cp-4;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+    border-width: 0 0 1px;
+
+    @media (min-width: $screen-sm-min) {
+        border-radius: 0;
+    }
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    &:focus {
+        outline: 0;
+    }
+    .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: black;
+    }
+    .icon-bar + .icon-bar {
+        margin-top: 4px;
+    }
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+.navbar-nav {
+    margin: 7.5px -15px;
+
+    li a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+    @media (min-width: 768px) {
+        float: left;
+        margin: 0;
+
+        li {
+            float: left;
+
+            a {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
